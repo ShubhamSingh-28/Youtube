@@ -41,7 +41,7 @@ const otherLinks=[
 ]
 
   return (
-    <div className="bg-[#181717] text-white min-h-fit w-2/12  cursor-pointer">
+    <div className="bg-[#181717] text-white h-screen w-2/12  cursor-pointer">
   <nav className="flex flex-col items-start space-y-2 p-4 ">
     <ul className="flex flex-col space-y-2 w-full  ">
       {mainLinks.map(({ icon, title }) => (
