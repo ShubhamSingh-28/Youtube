@@ -7,11 +7,11 @@ export default function Card({ data }) {
   return (
     <Link to={`/watch/${data.id.videoId}`} className="text-white">
       <div className="flex flex-col mb-8">
-        <div className="relative h-48 md:h-40 md:rounded-xl overflow-hidden">
+        <div className="relative h-48 md:h-40 md:rounded-2xl overflow-hidden">
           <img
             src={data.snippet.thumbnails.high.url}
             alt="Thumbnail"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover rounded-2xl"
           />
         </div>
         <div className="mt-2">

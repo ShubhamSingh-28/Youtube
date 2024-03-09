@@ -19,11 +19,11 @@ export default function Navbar() {
    const {pathname} = useLocation();
    const pageName = pathname.split("/").filter(Boolean)?.[0];
   return (
-    <div className="bg-[#181717] flex justify-between items-center text-white w-full h-16 px-2 lg:px-16 sticky top-0 z-20">
+    <div className="bg-[#181717] flex justify-between items-center text-white w-full h-16 px-4 lg:px-16 sticky top-0 z-20">
       <div className=" flex justify-center items-center gap-3 lg:gap-5">
        
         <div className=" flex gap-2 items-center lg:gap-4 cursor-pointer">
-        <GrYoutube className=" text-red-700 text-2xl lg:text-3xl"/>
+        <GrYoutube className=" text-red-700 text-3xl lg:text-3xl"/>
         <span className=" text-white font-semibold text-2xl lg:text-2xl">YouTube</span>
         </div>
       </div>
@@ -35,7 +35,7 @@ export default function Navbar() {
         onChange={(e)=>setSearchQuery(e.target.value)}
         value={searchQuery}
         onKeyUp={searchQueryHandler}
-        className="flex-1 appearance-none py-2 px-2 rounded-3xl font-semibold bg-gray-200 text-black leading-tight focus:outline-none focus:shadow-outline"
+        className="flex-1 appearance-none py-2 px-2 w-36 rounded-3xl font-semibold bg-gray-200 text-black leading-tight focus:outline-none focus:shadow-outline"
       />
       <button className=" hover:text-gray-500 cursor-pointer"
       onClick={searchQueryHandler2}>
